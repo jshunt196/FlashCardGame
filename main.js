@@ -41,7 +41,6 @@ function qTransition(questionNum) {
 
 function compareValues() {
     var x = document.getElementById("frm1");
-    alert(x.elements[0].value);
 
     if (x.elements[0].value == answers[currentQuestion]) {
       document.getElementById("answer").innerHTML = answers[currentQuestion] + "\nGood Job!";
