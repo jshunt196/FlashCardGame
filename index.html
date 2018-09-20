@@ -11,26 +11,28 @@
     <title>Game</title>
     <script src="main.js"></script> <!-- Changes: script before body, body "onload" function-->
   </head>
-  <body onload="inputQuestions()">
+  <body onload=>
 
-    <h1 style="text-align:center;">Justin and Josh's HTML, CSS, JavaScript Page</h1>
+    <div class="myClass"><img src="LogoMakr.png" style="float:right" height="53px" width="300px">
+      <h1>myQuiz</h1>
+    </div>
 
     <div class="content">
         <div class="column">
 
           <div class="flip-box">
-            <div class="flip-box-inner" onclick="this.classList.toggle('flipped')">
+            <div class="flip-box-inner" id="cardFront" onclick="flipBack()">
               <div class="flip-box-front">
                   <p id="question"></p>
 
                     <form id="frm1">
-                      Answer: <input type="text" id="userinput" name="answr"><br><br>
+                      Answer: <input type="text" id="userinput" name="answr" onkeydown="keyEnter(this)"><br><br>
                     <input type="button" onclick="compareValues()" value="Submit">
                   </form>
 
   <br>
               </div>
-              <div class="flip-box-back">
+              <div class="flip-box-back" >
                 <h2></h2>
                 <p id="answer"></p>
               </div>

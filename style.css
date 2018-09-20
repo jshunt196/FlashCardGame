@@ -1,5 +1,15 @@
+.myClass {
+  background-color: #008cff;
+}
+
 h1 {
-  padding: 20px;
+    color: white;
+    text-align: left;
+    font-family: Arial;
+    font-size: 45px;
+}
+
+img {
   background-color: #008cff;
   color: white;
 }
@@ -35,7 +45,7 @@ h1 {
 
 body {
     margin:0px;
-    background-color: lightgrey;
+    background-color: #a7bbcc;
 background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.5) 50%);
 background-size: 50px 50px;
 }
@@ -80,14 +90,14 @@ backface-visibility: hidden;
 /* Style the front side (fallback if image is missing) */
 .flip-box-front {
 border-radius: 25px;
-background-color: #5eb6ff;
-padding-top: 80px;
+background-color: #008cff;
+padding-top: 50px;
 color: black;
 }
 
 /* Style the back side */
 .flip-box-back {
-background-color: #008cff;
+background-color: #5eb6ff;
 color: white;
 transform: rotateY(180deg);
 }
