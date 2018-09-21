@@ -14,9 +14,16 @@ img {
   color: white;
 }
 
-.content {
+.content1 {
   margin: 20px auto;
   padding-top: 50px;
+  visibility: visible;
+}
+
+.content2 {
+  margin: 20px auto;
+  padding-top: 50px;
+  visibility: hidden;
 }
 
 .progress {
